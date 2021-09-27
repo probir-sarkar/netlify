@@ -53,3 +53,13 @@
      transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
+.cl-pink{
+  color: #f54ea2;
+}
+.cl-blue{
+  color: #41228e;
+}
+.cl-sky{
+  color: #3ef8f4;
+}
