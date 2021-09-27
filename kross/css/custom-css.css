@@ -57,6 +57,12 @@
 .cl-pink{
   color: #f54ea2;
 }
+.Anticipated {
+    background-color: #f54ea2;
+    font-size: 100%;
+    color: white;
+    font-weight: 400;
+}
 .cl-blue{
   color: #41228e;
 }
