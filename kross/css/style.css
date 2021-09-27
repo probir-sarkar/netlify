@@ -913,3 +913,8 @@ blockquote {
 	color: #f54ea2;
 	font-size: smaller;
 }
+@media screen and (max-width: 600px) {
+  .typed{
+    font-size: 30px;
+  }
+}
