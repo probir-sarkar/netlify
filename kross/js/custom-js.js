@@ -7,6 +7,4 @@ $(document).ready(function () {
       $(this).text("More");
     }
   });
-
-  // document ready
 });
