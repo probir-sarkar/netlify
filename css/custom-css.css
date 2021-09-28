@@ -34,12 +34,8 @@
     height: 30px;
     font-size: inherit;
 }
-.typed{
-	color: #f54ea2;
-	font-size: smaller;
-}
 @media screen and (max-width: 600px) {
-  .typed{ 
+  #typed{ 
     font-size: 40px;
   }
 }
