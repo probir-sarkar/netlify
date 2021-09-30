@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="" style="background-color: #56baed;">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-stop-circle"></i>
+        <b> Probir's Projects<br></b>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+        data-target="#navbar10">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar10">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "> <a class="nav-link h3 text-white mb-0" href="#">Features</a> </li>
+          <li class="nav-item"> <a class="nav-link h3 text-white mb-0" href="#">Pricing</a> </li>
+          <li class="nav-item"> <a class="nav-link h3 text-white mb-0" href="#">About</a> </li>
+          <li class="nav-item"> <a class="nav-link h3 text-white mb-0" href="#">FAQ</a> </li>
+        </ul> <a class="btn navbar-btn ml-md-2 btn-light text-dark btn-lg">Contact us</a>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="px-5 py-4 bg-white col-md-6 rounded-lg shadow-lg">
+          <form class="text-center">
+            <div class="form-group"> <label class="h3">ASCII to Text converter</label> <input type="text" id="id1"
+                class="form-control form-control-lg bg-light text-dark text-center rounded" placeholder="Enter Number">
+              <h4 id="demo" class="mt-2 bg-light text-dark py-2" style="display: none;"></h4>
+            </div>
+            <input type="button" class="btn btn-primary btn-lg" value="Get Char" onclick="myFunction()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var str = document.getElementById("id1");
+      var array = new Array();
+      var value = str.value;
+      var array = value.split(",");
+      var i;
+      let arrayValue;
+      let text = "";
+      for (i = 0; i < array.length; i++) {
+        arrayValue = array[i];
+        text += String.fromCharCode(arrayValue);
+        if (isNaN(arrayValue) == true) {
+          alert(arrayValue + "- is not a number");
+          document.getElementById("demo").style.display = "none";
+        } else if (arrayValue < 32) {
+          alert(arrayValue + " - is not in range of ASCII");
+          document.getElementById("demo").style.display = "none";
+          break;
+        } else if (arrayValue > 126) {
+          alert(arrayValue + " - is not in range of ASCII");
+          document.getElementById("demo").style.display = "none";
+          break;
+        } else {
+          document.getElementById("demo").style.display = "";
+        }
+      }
+      var a = "Char is == > <br> ";
+      document.getElementById("demo").innerHTML = a + text;
+    }
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
