@@ -11,7 +11,7 @@
         @media (max-width: 575px) {
 
 
-            .container,
+            #main-p .container,
             .container-lg,
             .container-md,
             .container-sm {
@@ -19,17 +19,17 @@
                 ;
             }
 
-            .pl-4,
+            #main-p .pl-4,
             .px-4 {
                 padding-left: 1rem !important;
             }
 
-            .pr-4,
+            #main-p .pr-4,
             .px-4 {
                 padding-right: 1rem !important;
             }
 
-            .h4,
+            #main-p .h4,
             h4 {
                 font-size: 1.2rem;
             }
@@ -41,7 +41,7 @@
 
 <body class="" style="background-color: #56baed;">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container"> <a class="navbar-brand" href="#">
+        <div class="container" id="main-form"> <a class="navbar-brand" href="#">
                 <i class="fa d-inline fa-lg fa-stop-circle"></i>
                 <b> Probir's Projects<br></b>
             </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
@@ -61,10 +61,10 @@
             </div>
         </div>
     </nav>
-    <div class="py-5">
+    <div class="py-5" id="main-p">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="px-4 py-4 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg" id="main">
+                <div class="px-4 py-4 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
                     <form class="text-center">
                         <div class="form-group"> <label class="h3">Text to ASCII converter</label> <input type="text"
                                 id="id1" class="form-control form-control-lg bg-light text-dark text-center rounded"
