@@ -10,12 +10,28 @@
     <style>
         @media (max-width: 575px) {
 
+
             .container,
             .container-lg,
             .container-md,
             .container-sm {
                 max-width: 85%;
                 ;
+            }
+
+            .pl-4,
+            .px-4 {
+                padding-left: 1rem !important;
+            }
+
+            .pr-4,
+            .px-4 {
+                padding-right: 1rem !important;
+            }
+
+            .h4,
+            h4 {
+                font-size: 1.2rem;
             }
         }
 
@@ -48,7 +64,7 @@
     <div class="py-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="px-5 py-4 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
+                <div class="px-4 py-4 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg" id="main">
                     <form class="text-center">
                         <div class="form-group"> <label class="h3">Text to ASCII converter</label> <input type="text"
                                 id="id1" class="form-control form-control-lg bg-light text-dark text-center rounded"
