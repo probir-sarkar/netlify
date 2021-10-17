@@ -72,9 +72,12 @@ const rand = () => {
   let len = idArray.length;
   if (len >= 1) {
     robot.play();
+
     let random = Math.floor(Math.random() * len);
     let ranBtn = idArray[random];
     let position = idArrayInnerHtml.indexOf(ranBtn.innerHTML);
+    ranBtn.classList.remove("btn-info");
+    ranBtn.className += " btn-danger";
     ranBtn.disabled = true;
     ranBtn.innerHTML = "O";
     idArrayInnerHtml.splice(position, 1, "O");
@@ -88,9 +91,10 @@ const remove = (btn) => {
 };
 const x = (btn) => {
   document.getElementById("result").innerHTML = "Playing....";
-
   human.play();
   btn.disabled = true;
+  btn.classList.remove("btn-info");
+  btn.className += " btn-success";
   let position = idArrayInnerHtml.indexOf(btn.innerHTML);
   idArrayInnerHtml.splice(position, 1, "X");
   btn.innerHTML = "X";
