@@ -1,0 +1,67 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+   <title>Call-Break</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <form>
+      <table style="width:100%" id="myTable" cellspacing="0" cellpadding="0">
+         <tr>
+            <th contentEditable="true">First</th>
+            <th contentEditable="true">Second</th>
+            <th contentEditable="true">Third</th>
+            <th contentEditable="true">Fourth</th>
+         </tr>
+         <tr>
+            <td><input onblur="findFirst()" type="number" name="firstRow" class="firstRow"></td>
+            <td><input onblur="findSecond()" type="number" name="SecondRow" class="secondRow"></td>
+            <td><input onblur="findThird()" type="number" name="thirdRow" class="thirdRow"></td>
+            <td><input onblur="findFourth()" type="number" name="thirdRow" class="fourthRow"></td>
+         </tr>
+         <tr>
+            <td><input onblur="findFirst()" type="number" name="firstRow" class="firstRow"></td>
+            <td><input onblur="findSecond()" type="number" name="SecondRow" class="secondRow"></td>
+            <td><input onblur="findThird()" type="number" name="thirdRow" class="thirdRow"></td>
+            <td><input onblur="findFourth()" type="number" name="thirdRow" class="fourthRow"></td>
+         </tr>
+         <tr>
+            <td><input onblur="findFirst()" type="number" name="firstRow" class="firstRow"></td>
+            <td><input onblur="findSecond()" type="number" name="SecondRow" class="secondRow"></td>
+            <td><input onblur="findThird()" type="number" name="thirdRow" class="thirdRow"></td>
+            <td><input onblur="findFourth()" type="number" name="thirdRow" class="fourthRow"></td>
+         </tr>
+         <tr>
+            <td><input onblur="findFirst()" type="number" name="firstRow" class="firstRow"></td>
+            <td><input onblur="findSecond()" type="number" name="SecondRow" class="secondRow"></td>
+            <td><input onblur="findThird()" type="number" name="thirdRow" class="thirdRow"></td>
+            <td><input onblur="findFourth()" type="number" name="thirdRow" class="fourthRow"></td>
+         </tr>
+         <tr>
+            <td><input onblur="findFirst()" type="number" name="firstRow" class="firstRow"></td>
+            <td><input onblur="findSecond()" type="number" name="SecondRow" class="secondRow"></td>
+            <td><input onblur="findThird()" type="number" name="thirdRow" class="thirdRow"></td>
+            <td><input onblur="findFourth()" type="number" name="thirdRow" class="fourthRow"></td>
+         </tr>
+         <tfoot>
+            <tr id="result">
+               <td>Total = <span id="firstResult"></span><br><span id="result1"></span></td>
+               <td>Total = <span id="secondResult"></span><br><span id="result2"></span></td>
+               <td>Total = <span id="thirdResult"></span><br><span id="result3"></span></td>
+               <td>Total = <span id="fourthResult"></span><br><span id="result4"></span></td>
+            </tr>
+         </tfoot>
+      </table>
+
+   </form>
+   <div id="container">
+      <button type="button" onclick="myFunction()" class="button" id="btn1">Add Row</button>
+
+      <button type="button" onclick="Function()" class="button" id="btn2">Check Result</button>
+   </div>
+</body>
+<script src="myscript.js"></script>
+
+</html>
