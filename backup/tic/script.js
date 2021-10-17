@@ -7,7 +7,6 @@ robot.load();
 human.load();
 const toggle = (result) => {
   document.getElementById("result").innerHTML = result;
-  document.getElementById("overlay").style.visibility = "visible";
   document
     .querySelectorAll("button.playBtn")
     .forEach((elem) => (elem.disabled = true));
