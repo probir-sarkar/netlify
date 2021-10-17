@@ -72,7 +72,7 @@ const pass = (check) => {
     } else if (check == "X") {
       setTimeout(function () {
         rand();
-      }, 400);
+      }, 250);
     }
   }
 };
