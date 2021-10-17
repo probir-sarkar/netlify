@@ -131,7 +131,7 @@ if (humanCount == null) {
 }
 
 refresh.onclick = () => {
-  location.reload(true);
+  location.reload(false);
 };
 reset.onclick = () => {
   sessionStorage.clear();
