@@ -5,12 +5,20 @@ let human = new Audio("human.wav");
 let robot = new Audio("robot.wav");
 robot.load();
 human.load();
-const toggle = (result) => {
-  document.getElementById("result").innerHTML = result;
-  document.getElementById("overlay").style.visibility = "visible";
+const disableBtn = () => {
   document
     .querySelectorAll("button.playBtn")
     .forEach((elem) => (elem.disabled = true));
+};
+const enableBtn = () => {
+  document
+    .querySelectorAll("button.playBtn")
+    .forEach((elem) => (elem.disabled = false));
+};
+const toggle = (result) => {
+  document.getElementById("result").innerHTML = result;
+  document.getElementById("overlay").style.visibility = "visible";
+  disableBtn();
 };
 const pass = (check) => {
   ck = idArrayInnerHtml;

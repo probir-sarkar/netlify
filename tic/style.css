@@ -1,6 +1,7 @@
 .stack-top {
-  width: 250px;
-  background-color: #61dcf5;
+  width: 306px;
+  background-color: #61dcf53d;
+  height: 306px;
 }
 .playBtn {
   height: 100px;
@@ -10,11 +11,23 @@
   color: transparent;
 }
 .rst {
-  width: 90px;
-  font-weight: 400;
+  width: 125px;
+  font-weight: 500;
 }
-div#overlay {
+.container {
+  position: relative;
+}
+.rowoverlay {
   position: absolute;
-  top: 26%;
-  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.coloverlay {
+  background-color: rgba(255, 248, 248, 0.199);
+  height: 100%;
 }
