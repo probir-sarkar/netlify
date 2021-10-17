@@ -83,6 +83,7 @@ const x = (btn) => {
   let position = idArrayInnerHtml.indexOf(btn.innerHTML);
   idArrayInnerHtml.splice(position, 1, "X");
   btn.innerHTML = "X";
+  btn.style.color = "black !important";
   remove(btn);
   pass("X");
 };
