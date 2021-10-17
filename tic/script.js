@@ -3,7 +3,7 @@ let pcCount = JSON.parse(sessionStorage.getItem("pcCount"));
 let drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
 
 const toggle = (result) => {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("overlay").style.visibility = "visible";
   document.getElementById("result").innerHTML = result;
   document
     .querySelectorAll("button.playBtn")
@@ -47,7 +47,9 @@ const pass = (check) => {
     (a == "O" && e == "O" && i == "O") ||
     (c == "O" && e == "O" && g == "O")
   ) {
-    toggle("Computer pass");
+    setTimeout(function () {
+      toggle("Computer pass");
+    }, 100);
     pcCount = pcCount + 1;
     sessionStorage.setItem("pcCount", JSON.stringify(pcCount));
   } else {
@@ -57,13 +59,17 @@ const pass = (check) => {
       drawCount = drawCount + 1;
       sessionStorage.setItem("drawCount", JSON.stringify(drawCount));
     } else if (check == "X") {
-      rand();
+      setTimeout(function () {
+        rand();
+      }, 400);
     }
   }
 };
 const rand = () => {
   let len = idArray.length;
   if (len >= 1) {
+    var robot = new Audio("human.wav");
+    robot.play();
     let random = Math.floor(Math.random() * len);
     let ranBtn = idArray[random];
     let position = idArrayInnerHtml.indexOf(ranBtn.innerHTML);
@@ -79,6 +85,9 @@ const remove = (btn) => {
   idArray.splice(index, 1);
 };
 const x = (btn) => {
+  document.getElementById("result").innerHTML = "Playing....";
+  var human = new Audio("robot.wav");
+  human.play();
   btn.disabled = true;
   let position = idArrayInnerHtml.indexOf(btn.innerHTML);
   idArrayInnerHtml.splice(position, 1, "X");
