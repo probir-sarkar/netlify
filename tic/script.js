@@ -1,9 +1,6 @@
-let humanCount = 0;
-humanCount = JSON.parse(sessionStorage.getItem("humanCount"));
-let pcCount = 0;
-pcCount = JSON.parse(sessionStorage.getItem("pcCount"));
-let drawCount = 0;
-drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
+let humanCount = JSON.parse(sessionStorage.getItem("humanCount"));
+let pcCount = JSON.parse(sessionStorage.getItem("pcCount"));
+let drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
 
 const toggle = (result) => {
   document.getElementById("overlay").style.display = "block";
@@ -38,6 +35,7 @@ const pass = (check) => {
     toggle("You pass");
     humanCount = humanCount + 1;
     sessionStorage.setItem("humanCount", JSON.stringify(humanCount));
+
     return true;
   } else if (
     (a == "O" && b == "O" && c == "O") ||
@@ -123,10 +121,19 @@ btn7.onclick = () => x(btn7);
 btn8.onclick = () => x(btn8);
 btn9.onclick = () => x(btn9);
 
+let refresh = document.querySelector("#refresh");
 let reset = document.querySelector("#reset");
-document.getElementById("humanCnt").innerHTML =
-  sessionStorage.getItem("humanCount");
 
-reset.onclick = () => {
+if (humanCount == null) {
+  document.getElementById("humanCnt").innerHTML = "0";
+} else {
+  document.getElementById("humanCnt").innerHTML = humanCount;
+}
+
+refresh.onclick = () => {
   location.reload(false);
+};
+reset.onclick = () => {
+  sessionStorage.clear();
+  location.reload(true);
 };

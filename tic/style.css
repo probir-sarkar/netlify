@@ -12,11 +12,17 @@
         left: 0;
     }*/
     .stack-top{
-background-color: rgba(255, 0, 0, 0.4);
+           width: 306px;
+           background-color: #61dcf5;
+
     }
     .playBtn{
         height: 100px;
         width: 100px;
         font-size: 3em !important;
         font-weight: 500 !important;
+    }
+    .rst{
+        width: 125px;
+    font-weight: 500;
     }

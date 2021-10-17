@@ -19,7 +19,7 @@
     <div class="container" id="container">
       <div class="row d-flex justify-content-center">
         <div class="box px-4 py-5 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
-          <table rules="all" class="table-info btn-group d-flex justify-content-center">
+          <table rules="all" class="table-info d-flex justify-content-center">
             <tr>
               <td><button id="btn1" class="playBtn btn btn-info btn-lg">1</button></td>
               <td><button id="btn2" class="playBtn btn btn-info btn-lg">2</button></td>
@@ -36,12 +36,21 @@
               <td><button id="btn9" class="playBtn btn btn-info btn-lg">9</button></td>
             </tr>
           </table>
-        </div>
-      </div>
+          <div class="d-flex justify-content-center mt-4">
+            <div class=" rounded-2 box stack-top bg-info" id="overlay" ; style="display: none">
+              <div class="d-flex flex-column justify-content-center">
+                <h2 id="result" class="text-center text-white text-uppercase py-2 "></h2>
+                <div class="d-flex flex-row justify-content-around mb-2">
+                  <button id="refresh" class="rst break btn-lg btn-primary border-0">REFRESH</button>
+                  <button id="reset" class="rst break btn-lg btn-primary border-0">RESET</button>
+                </div>
 
-      <div class="box stack-top" id="overlay" ; style="display: none">
-        <h1 id="result" style="color: black"></h1>
-        <button id="reset">Reset</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
