@@ -1,6 +1,7 @@
 .stack-top {
   width: 306px;
-  background-color: #61dcf53d;
+  background-color: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(0.5px);
   height: 306px;
 }
 .playBtn {
@@ -10,6 +11,9 @@
   font-weight: 500 !important;
   color: transparent;
 }
+.playBtn:disabled {
+  opacity: 1;
+}
 .rst {
   width: 125px;
   font-weight: 500;
@@ -17,7 +21,6 @@
 .rowoverlay {
   position: absolute;
 }
-
 .parent {
   justify-content: space-evenly;
 }
