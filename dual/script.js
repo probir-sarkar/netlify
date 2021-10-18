@@ -48,7 +48,6 @@ const pass = () => {
     overlay("Player 1 Win");
     playerOneCount = playerOneCount + 1;
     sessionStorage.setItem("playerOneCount", JSON.stringify(playerOneCount));
-
     return true;
   } else if (
     (a == "O" && b == "O" && c == "O") ||
@@ -66,8 +65,7 @@ const pass = () => {
     playerTwoCount = playerTwoCount + 1;
     sessionStorage.setItem("playerTwoCount", JSON.stringify(playerTwoCount));
   } else {
-    let len = idArray.length;
-    if (len == 0) {
+    if (count == 0) {
       overlay("draw");
       drawCount = drawCount + 1;
       sessionStorage.setItem("drawCount", JSON.stringify(drawCount));
@@ -75,6 +73,7 @@ const pass = () => {
   }
 };
 const x = (btn) => {
+  count--;
   colorChange(btn);
   document.getElementById("result").innerHTML = "Playing....";
   human.play();
@@ -111,7 +110,7 @@ let btn7 = document.querySelector("#btn7");
 let btn8 = document.querySelector("#btn8");
 let btn9 = document.querySelector("#btn9");
 
-let idArray = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9];
+let count = 9;
 
 let idArrayInnerHtml = [
   btn1.innerHTML,

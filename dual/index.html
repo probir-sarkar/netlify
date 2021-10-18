@@ -17,8 +17,24 @@
   <div class="py-5">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="box px-4 py-5 bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
-          <div class="d-flex justify-content-center">
+        <div class="box bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
+          <div class="d-flex flex-row justify-content-between">
+            <button type="button" class="btn btn-success position-relative">
+              Player One
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span id="playerOne"></span>
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            <button type="button" class="btn btn-danger position-relative">
+              Player Two
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span id="playerTwo"></span>
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+          <div class="d-flex justify-content-center px-4 py-5">
             <table rules="all" class="table-info">
               <tr>
                 <td><button id="btn1" class="playBtn btn btn-info btn-lg"><span
@@ -58,14 +74,11 @@
               <button id="reset" class="rst btn-lg btn-primary border-0">RESET</button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 
-  <h3>Player One Points: <span id="playerOne"></span></h3>
-  <h3>Player Two Points: <span id="playerTwo"></span></h3>
 </body>
 <script src="script.js" id="javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
