@@ -18,22 +18,22 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="box bg-white col-md-8 col-lg-6 rounded-lg shadow-lg">
+          <!-- Notifications Button -->
           <div class="d-flex flex-row justify-content-between">
-            <button type="button" class="btn btn-success position-relative">
+            <button type="button" id="player1" onclick="typeX()" class="btn btn-success position-relative">
               Player One
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 <span id="playerOne"></span>
-                <span class="visually-hidden">unread messages</span>
               </span>
             </button>
-            <button type="button" class="btn btn-danger position-relative">
+            <button type="button" id="player2" onclick="typeO()" class="btn btn-danger position-relative">
               Player Two
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 <span id="playerTwo"></span>
-                <span class="visually-hidden">unread messages</span>
               </span>
             </button>
           </div>
+          <!-- End of Notifications Button -->
           <div class="d-flex justify-content-center px-4 py-5">
             <!--Game Table-->
             <table rules="all" class="table-info">

@@ -3,18 +3,17 @@ let playerOneCount = JSON.parse(sessionStorage.getItem("playerOneCount"));
 let playerTwoCount = JSON.parse(sessionStorage.getItem("playerTwoCount"));
 let drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
 // End of Session Storage
-
+let clicked = false;
 //Audio file
 let human = new Audio("human.wav");
 let robot = new Audio("robot.wav");
 robot.load();
 human.load();
 //End of audio file
-
+const playBtn = document
+  .querySelectorAll("button.playBtn");
 const disableBtn = () => {
-  document
-    .querySelectorAll("button.playBtn")
-    .forEach((elem) => (elem.disabled = true));
+    playBtn.forEach((elem) => (elem.disabled = true));
 };
 const overlay = (result) => {
   document.getElementById("result").innerHTML = result;
@@ -83,6 +82,7 @@ const x = (btn) => {
   btn.innerHTML = player;
   xy();
   pass();
+  clicked = true;
 };
 const colorChange = (btn) => {
   if (player == "X") {
@@ -95,8 +95,12 @@ const colorChange = (btn) => {
 };
 const xy = () => {
   if (player == "X") {
+    document.getElementById("player1").disabled = true;
+    document.getElementById("player2").disabled = false;
     player = "O";
   } else if (player == "O") {
+    document.getElementById("player1").disabled = false;
+    document.getElementById("player2").disabled = true;
     player = "X";
   }
 };
@@ -123,6 +127,7 @@ let idArrayInnerHtml = [
   btn8.innerHTML,
   btn9.innerHTML,
 ];
+let idArrayInnerHtmlBackup = idArrayInnerHtml;
 
 btn1.onclick = () => x(btn1);
 btn2.onclick = () => x(btn2);
@@ -154,3 +159,16 @@ reset.onclick = () => {
   sessionStorage.clear();
   location.reload(true);
 };
+
+// Notification Buttons
+function typeX() {
+  if (clicked == false) {
+    player = "X";
+  }
+
+};
+function typeO() {
+  if (clicked == false) {
+    player = "O";
+  }
+}''
