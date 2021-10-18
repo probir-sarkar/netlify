@@ -1,0 +1,36 @@
+.stack-top {
+  width: 306px;
+  background-color: #61dcf53d;
+  height: 306px;
+}
+.playBtn {
+  height: 100px;
+  width: 100px;
+  font-size: 3em !important;
+  font-weight: 500 !important;
+  color: transparent;
+}
+.rst {
+  width: 125px;
+  font-weight: 500;
+}
+.container {
+  position: relative;
+}
+.rowoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.coloverlay {
+  background-color: rgba(255, 248, 248, 0.199);
+  height: 100%;
+}
+.parent {
+  justify-content: space-evenly;
+}
