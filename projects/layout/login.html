@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+    }
+
+    .login-row {
+        background-color: #F1FAEE;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="container mt-5">
+            <div class="row login-row py-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-9 col-lg-5 col-xl-4 d-none d-lg-block">
+                    <img src="login.png"
+                        class="img-fluid" alt="Sample image">
+                    <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.png"
+                        class="img-fluid" alt="Sample image"> -->
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-5 offset-xl-1 ">
+                    <form id="login-form">
+                        <div
+                            class="d-flex  flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                        </div>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="mb-4">
+                            <label class="form-label" for="login-email">Email address</label>
+                            <input type="email" id="login-email" class="form-control form-control-lg"
+                                placeholder="Enter a valid email address" />
+
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="login-pass">Password</label>
+
+                            <input type="password" id="login-pass" class="form-control form-control-lg"
+                                placeholder="Enter password" />
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="login-remember" />
+                                <label class="form-check-label" for="login-remember">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#!" class="text-body">Forgot password?</a>
+                        </div>
+
+                        <div class="text-center  mt-4 pt-2">
+                            <button type="button" class="btn btn-primary btn-lg px-5">Login</button>
+                            <p class="small mt-2 pt-1 mb-0">Don't have an account? <a href=""
+                                    id="go-to-register" class="link-danger">Register</a></p>
+                            <p class="small mt-2 pt-1 mb-0"><a href=""
+                                    id="as-guest" class="link-danger">Continue as Guest</a></p>
+                        </div>
+
+                    </form>
+                    <form id="register-form" style="display: none;">
+                        <h2 class="text-center">Sign Up</h2>
+                        <!-- Name input -->
+                        <div class="mb-4">
+                            <label class="form-label" for="reg-name">Name</label>
+                            <input type="text" id="reg-name" class="form-control form-control-lg"
+                                placeholder="Enter full name" />
+                        </div>
+                        <!-- Email input -->
+                        <div class="mb-4">
+                            <label class="form-label" for="reg-email">Email</label> or Mobile</label>
+                            <input type="email" id="reg-email" class="form-control form-control-lg"
+                                placeholder="Email Address or Mobile" />
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="form-label" for="reg-pass">Password</label>
+                                    <input type="password" id="reg-pass" class="form-control form-control-lg"
+                                        placeholder="Enter password" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label" for="reg-pass-cf">Confirm password</label>
+                                    <input type="password" id="reg-pass-cf" class="form-control form-control-lg"
+                                        placeholder="Enter password" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Terms and conditions -->
+                        <p>By clicking <b>Register</b>, you agree to the <a href="">Terms and Conditions</a> set out by
+                            this
+                            site, including
+                            our Cookie Use.</p>
+                        <!-- Buttons -->
+                            <div class="row d-flex justify-content-between">
+                                <div class="col-6 mt-3 pt-2 ">
+                                    <button type="button" id="back-to-login" class="btn btn-primary btn-lg btn-block">Back
+                                        to Login</button>
+                                </div>
+                                <div class="col-6 mt-3 pt-2 d-flex">
+                                    <button type="button" class="btn btn-warning btn-lg btn-block">Register</button>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $('#go-to-register').click(function (event) {
+        event.preventDefault();
+        $('#login-form').hide();
+        $('#register-form').fadeIn('slow');
+    })
+    $('#back-to-login').click(function (event) {
+        $('#register-form').hide();
+        $('#login-form').fadeIn('slow');
+    })
+</script>
+
+</html>

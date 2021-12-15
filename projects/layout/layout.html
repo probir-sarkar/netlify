@@ -20,21 +20,26 @@
         font-size: 12px;
         line-height: normal;
     }
-.flayer-txt ul{
-    margin-left: -5%;
-    
-}
-.flayer-txt{
-color:white;
-padding-top: 5%;
-padding-bottom: 5%;
-}
-.flayer-txt h4{
-    font-size: 18px;
-}
-.flayer-txt h6{
-    font-size: 12px;
-}
+
+    .flayer-txt ul {
+        margin-left: -5%;
+
+    }
+
+    .flayer-txt {
+        color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .flayer-txt h4 {
+        font-size: 18px;
+    }
+
+    .flayer-txt h6 {
+        font-size: 12px;
+    }
+
     .flayer-txt button {
         background-color: #ffb200;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 20px -7px;
@@ -59,53 +64,106 @@ padding-bottom: 5%;
         margin-left: -80%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     }
-.flayer-hover{
-    transition: transform .5s ease;
-    margin-top: 5%;
-}
-.flayer-hover:hover{
-    transform: scale(1.06);
-}
-.flayer-share{
-position: absolute;
-left: 73%;
-top: 3%;
-background-color: #007bff;
-color: white;
-border-radius: 50%;
-height: 20px;
-width: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.flayer-share:hover{
-    color: white;
-}
-.flayer-share i{
-    line-height: 0%;
-    font-size: 0.7rem;
-}
-    .flayer-container{
-    max-width: 80%;
-    }
-@media  screen and (max-width:992px){
-    .flayer-img {
-    margin-left: -50%;
-    height: 70%;
-    }
-}
-@media screen and (max-width:1200px){
-    .flayer-img {
-    margin-left: -50%;
-    }
-}
-@media screen and (max-width:767px){
-    .flayer-hover{
-        max-width: 75%;
-    }
-}
 
+    .flayer-hover {
+        transition: transform .5s ease;
+        margin-top: 5%;
+        margin-left: 1%;
+    }
+
+    .flayer-hover:hover {
+        transform: scale(1.04);
+    }
+
+    .flayer-share {
+        position: absolute;
+        left: 73%;
+        top: 3%;
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flayer-share:hover {
+        color: white;
+    }
+
+    .flayer-share i {
+        line-height: 0%;
+        font-size: 0.7rem;
+    }
+
+    @media screen and (max-width:992px) {
+        .flayer-img {
+            margin-left: -50%;
+            height: 70%;
+        }
+
+        .flayer-container {
+            max-width: 80%;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        .flayer-img {
+            margin-left: -50%;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .flayer-container {
+            max-width: 50%;
+        }
+
+        .flayer-txt h4 {
+            font-size: 16px;
+        }
+
+        .flayer-txt h6 {
+            font-size: 10px;
+        }
+
+        .flayer-txt p,
+        .flayer-txt ul li {
+            font-size: 10px;
+            line-height: normal;
+        }
+
+        .flayer-txt button {
+            font-size: 12px;
+        }
+
+        .flayer-txt {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .flayer-side-bg {
+            margin-bottom: 2rem !important;
+            margin-top: 2rem !important;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .flayer-img {
+            margin-left: -80%;
+        }
+
+        .flayer-container {
+            padding-right: 0%;
+        }
+    }
+
+    @media screen and (max-width:430px) {
+        .flayer-img {
+            margin-left: -110%;
+        }
+    }
 </style>
 
 <body>
@@ -114,9 +172,9 @@ justify-content: center;
             <div class="col-xl-3 col-md-5 p-0 flayer-hover">
                 <div class="row flayer">
                     <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
-                            <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
-                            <img class="flayer-img" src="Counseling icon (1).png">
-                        </div>
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
                     <div class="col flayer-txt">
                         <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
                         <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
@@ -137,9 +195,9 @@ justify-content: center;
             <div class="col-xl-3 col-md-5 p-0 flayer-hover">
                 <div class="row flayer">
                     <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
-                            <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
-                            <img class="flayer-img" src="Counseling icon (1).png">
-                        </div>
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
                     <div class="col flayer-txt">
                         <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
                         <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
@@ -160,9 +218,78 @@ justify-content: center;
             <div class="col-xl-3 col-md-5 p-0 flayer-hover">
                 <div class="row flayer">
                     <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
-                            <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
-                            <img class="flayer-img" src="Counseling icon (1).png">
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
+                    <div class="col flayer-txt">
+                        <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
+                        <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
+                        <p class="mb-0">Information about innate intelligence with a thorough scientifically calculated
+                            overall IQ
+                            score, and individual scores on</p>
+                        <ul>
+                            <li>Verbal</li>
+                            <li>Numerical</li>
+                            <li>Abstract</li>
+                            <li>Spatial Reasoning</li>
+                        </ul>
+                        <div class="text-center"><button type="button" class="btn">TEST NOW</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-5 p-0 flayer-hover">
+                <div class="row flayer">
+                    <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
+                    <div class="col flayer-txt">
+                        <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
+                        <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
+                        <p class="mb-0">Information about innate intelligence with a thorough scientifically calculated
+                            overall IQ
+                            score, and individual scores on</p>
+                        <ul>
+                            <li>Verbal</li>
+                            <li>Numerical</li>
+                            <li>Abstract</li>
+                            <li>Spatial Reasoning</li>
+                        </ul>
+                        <div class="text-center"><button type="button" class="btn">TEST NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-5 p-0 flayer-hover">
+                <div class="row flayer">
+                    <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
+                    <div class="col flayer-txt">
+                        <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
+                        <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
+                        <p class="mb-0">Information about innate intelligence with a thorough scientifically calculated
+                            overall IQ
+                            score, and individual scores on</p>
+                        <ul>
+                            <li>Verbal</li>
+                            <li>Numerical</li>
+                            <li>Abstract</li>
+                            <li>Spatial Reasoning</li>
+                        </ul>
+                        <div class="text-center"><button type="button" class="btn">TEST NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-5 p-0 flayer-hover">
+                <div class="row flayer">
+                    <div class="flayer-side-bg col-4 my-5 ml-n5 d-flex align-items-center">
+                        <a href="" class="flayer-share"><i class="fas fa-share-alt"></i></a>
+                        <img class="flayer-img" src="Counseling icon (1).png">
+                    </div>
                     <div class="col flayer-txt">
                         <h4 class="text-center"><b>IQ ASSESSMENT</b> </h4>
                         <h6 class="text-center mb-3">Check and Enhance Your IQ</h6>
